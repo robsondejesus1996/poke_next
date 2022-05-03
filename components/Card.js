@@ -1,7 +1,7 @@
+import styles from "../styles/Card.module.css";
+
 import Image from "next/image";
 import Link from "next/link";
-
-import styles from "../../styles/Card.module.css";
 
 export default function Card({ pokemon }) {
   return (
@@ -14,7 +14,7 @@ export default function Card({ pokemon }) {
       />
       <p className={styles.id}>#{pokemon.id}</p>
       <h3 className={styles.title}>{pokemon.name}</h3>
-      <Link href="{`/pokemon/${pokemon.id}`}">
+      <Link href={`/pokemon/${pokemon.id}`}>
         <a className={styles.btn}>Detalhes</a>
       </Link>
     </div>
